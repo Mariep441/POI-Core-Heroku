@@ -1,0 +1,24 @@
+
+{{> mainmenu _id="details" }}
+
+<section class="ui segment">
+
+    <h2>{{points.costalZone}}</h2>
+    <h3> {{points.name}}</h3>
+    <div>{{points.description}}</div>
+
+    <p></p>
+    <p><strong> latitude: </strong> {{points.coordinates.geo.lat}}</p>
+    <p><strong> longitude: </strong>  {{points.coordinates.geo.long}}</p>
+
+</section>
+
+<section class="ui segment">
+    <div class="ui large images">
+          {{#each points.image}}
+              <img src="{{url}}">
+          {{/each}}
+    </div>
+</section>
+
+
